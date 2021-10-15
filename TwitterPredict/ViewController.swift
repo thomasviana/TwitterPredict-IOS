@@ -6,15 +6,31 @@
 //
 
 import UIKit
+import SwifteriOS
+import CoreML
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var sentimentLabel: UILabel!
     
+    let sentimentClassifier = TweetSentimentClassifier();
+    let swifter = Swifter(consumerKey: "6cTs5ps7q82E7Lm5tGUJ4EZ8p", consumerSecret: "Mn9l2RZUoEBNHLoteCHqZgz8KSP59U8PqYJzlZBXH1VNp0OcwE")
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let prediction = try! sentimentClassifier.prediction(text: "@Apple is the best company")
+        
+        print(prediction.label)
+        
+        swifter.searchTweet(using: "@Apple",lang: "en", count: 100, tweetMode: .extended, success: { results, metadata in
+//            print(results)
+        }) { error in
+            print("There wa an error with the Twitter API Request")
+        }
+        
     }
 
     @IBAction func predictPressed(_ sender: Any) {
