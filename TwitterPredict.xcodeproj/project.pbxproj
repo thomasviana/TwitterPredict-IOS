@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D58AD0A2719F640008C55E8 /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D58AD092719F640008C55E8 /* TweetSentimentClassifier.mlmodel */; };
 		4D70DA422719E859003EAA57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70DA412719E859003EAA57 /* AppDelegate.swift */; };
 		4D70DA442719E859003EAA57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70DA432719E859003EAA57 /* SceneDelegate.swift */; };
 		4D70DA462719E859003EAA57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70DA452719E859003EAA57 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D58AD092719F640008C55E8 /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
 		4D70DA3E2719E859003EAA57 /* TwitterPredict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterPredict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D70DA412719E859003EAA57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D70DA432719E859003EAA57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		4D70DA402719E859003EAA57 /* TwitterPredict */ = {
 			isa = PBXGroup;
 			children = (
+				4D58AD092719F640008C55E8 /* TweetSentimentClassifier.mlmodel */,
 				4D70DA412719E859003EAA57 /* AppDelegate.swift */,
 				4D70DA432719E859003EAA57 /* SceneDelegate.swift */,
 				4D70DA452719E859003EAA57 /* ViewController.swift */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D70DA462719E859003EAA57 /* ViewController.swift in Sources */,
+				4D58AD0A2719F640008C55E8 /* TweetSentimentClassifier.mlmodel in Sources */,
 				4D70DA4C2719E859003EAA57 /* TwitterPredict.xcdatamodeld in Sources */,
 				4D70DA422719E859003EAA57 /* AppDelegate.swift in Sources */,
 				4D70DA442719E859003EAA57 /* SceneDelegate.swift in Sources */,
