@@ -17,6 +17,7 @@
 		4D70DA4C2719E859003EAA57 /* TwitterPredict.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D70DA4A2719E859003EAA57 /* TwitterPredict.xcdatamodeld */; };
 		4D70DA4E2719E861003EAA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D70DA4D2719E861003EAA57 /* Assets.xcassets */; };
 		4D70DA512719E861003EAA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D70DA4F2719E861003EAA57 /* LaunchScreen.storyboard */; };
+		EF674AA89AAC9C24F5196B31 /* Pods_TwitterPredict.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8F43C8F00D0A37630EDBE7 /* Pods_TwitterPredict.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		249AC6863E765066D7E37B94 /* Pods-TwitterPredict.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterPredict.debug.xcconfig"; path = "Target Support Files/Pods-TwitterPredict/Pods-TwitterPredict.debug.xcconfig"; sourceTree = "<group>"; };
 		4D58AD092719F640008C55E8 /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
 		4D58AD0B271A18AE008C55E8 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../../Desktop/Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 		4D70DA3E2719E859003EAA57 /* TwitterPredict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterPredict.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,8 @@
 		4D70DA4D2719E861003EAA57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D70DA502719E861003EAA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D70DA522719E861003EAA57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92AEBB3ADEAD94BFF80BBA78 /* Pods-TwitterPredict.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterPredict.release.xcconfig"; path = "Target Support Files/Pods-TwitterPredict/Pods-TwitterPredict.release.xcconfig"; sourceTree = "<group>"; };
+		DD8F43C8F00D0A37630EDBE7 /* Pods_TwitterPredict.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterPredict.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D58AD1E271A1906008C55E8 /* SwifteriOS.framework in Frameworks */,
+				EF674AA89AAC9C24F5196B31 /* Pods_TwitterPredict.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 		4D58AD1D271A1906008C55E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD8F43C8F00D0A37630EDBE7 /* Pods_TwitterPredict.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 				4D70DA402719E859003EAA57 /* TwitterPredict */,
 				4D70DA3F2719E859003EAA57 /* Products */,
 				4D58AD1D271A1906008C55E8 /* Frameworks */,
+				F615B970A7A43918268F487D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +157,16 @@
 			path = TwitterPredict;
 			sourceTree = "<group>";
 		};
+		F615B970A7A43918268F487D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				249AC6863E765066D7E37B94 /* Pods-TwitterPredict.debug.xcconfig */,
+				92AEBB3ADEAD94BFF80BBA78 /* Pods-TwitterPredict.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,10 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D70DA552719E861003EAA57 /* Build configuration list for PBXNativeTarget "TwitterPredict" */;
 			buildPhases = (
+				1BF4F958C6C5FC26AA99319F /* [CP] Check Pods Manifest.lock */,
 				4D70DA3A2719E859003EAA57 /* Sources */,
 				4D70DA3B2719E859003EAA57 /* Frameworks */,
 				4D70DA3C2719E859003EAA57 /* Resources */,
 				4D58AD20271A1906008C55E8 /* Embed Frameworks */,
+				D76768A476F8A01C07B58817 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +278,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BF4F958C6C5FC26AA99319F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitterPredict-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D76768A476F8A01C07B58817 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwitterPredict/Pods-TwitterPredict-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwitterPredict/Pods-TwitterPredict-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwitterPredict/Pods-TwitterPredict-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D70DA3A2719E859003EAA57 /* Sources */ = {
@@ -413,6 +474,7 @@
 		};
 		4D70DA562719E861003EAA57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 249AC6863E765066D7E37B94 /* Pods-TwitterPredict.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -432,6 +494,7 @@
 		};
 		4D70DA572719E861003EAA57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92AEBB3ADEAD94BFF80BBA78 /* Pods-TwitterPredict.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
