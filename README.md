@@ -1,5 +1,9 @@
 # TwitterPredict-IOS (Machine Learning)
 
+Sentiment Analysis of Twitter Data for Predicting Stock Market Movements.
+
+https://arxiv.org/abs/1610.09225
+
 This application allows you to predict sentiment trend from Twitter accounts or hashtags.
 Creating a coreML Model, using Swifter and fetching Live Twitter Data. (API)
 
