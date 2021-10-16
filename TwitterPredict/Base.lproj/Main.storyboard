@@ -16,26 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter Predict" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdL-1e-oo6">
-                                <rect key="frame" x="93" y="172" width="228" height="37"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Twitter Predict" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdL-1e-oo6">
+                                <rect key="frame" x="57" y="153" width="301" height="45"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application allows you to predict sentiment trend from Twitter accounts or hashtags." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iks-vI-mtT">
-                                <rect key="frame" x="40" y="218" width="334" height="67"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J0x-mX-NfB">
-                                <rect key="frame" x="40" y="341" width="334" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J0x-mX-NfB">
+                                <rect key="frame" x="40" y="367" width="334" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbo-Kb-dPJ">
-                                <rect key="frame" x="124" y="394" width="166" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbo-Kb-dPJ">
+                                <rect key="frame" x="124" y="444" width="166" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="PREDICT">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -45,33 +39,40 @@
                                     <action selector="predictPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M8h-Lo-Mie"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yuk-cj-Ti0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="🔍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yuk-cj-Ti0">
                                 <rect key="frame" x="116" y="540.5" width="183" height="179.5"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="150"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application allows you to predict sentiment trend from Twitter accounts or hashtags." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iks-vI-mtT">
+                                <rect key="frame" x="40" y="233" width="334" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="fli-VB-Kxn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="TwitterBlue"/>
                         <constraints>
-                            <constraint firstItem="Yuk-cj-Ti0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="4uU-i3-lgo"/>
-                            <constraint firstItem="Yuk-cj-Ti0" firstAttribute="top" secondItem="Gbo-Kb-dPJ" secondAttribute="bottom" constant="127" id="6ca-1P-bRd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yuk-cj-Ti0" secondAttribute="bottom" constant="142" id="Cjg-O9-fYt"/>
-                            <constraint firstItem="Gbo-Kb-dPJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="DYK-dX-Ns8"/>
-                            <constraint firstItem="UdL-1e-oo6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="Fv4-f1-q39"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gbo-Kb-dPJ" secondAttribute="trailing" constant="124" id="PnV-yE-ck2"/>
-                            <constraint firstItem="iks-vI-mtT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="174" id="Rsg-qj-XG6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yuk-cj-Ti0" secondAttribute="trailing" constant="115" id="VPJ-gA-S0K"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J0x-mX-NfB" secondAttribute="trailing" constant="40" id="aP9-8y-bqY"/>
-                            <constraint firstItem="iks-vI-mtT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="bbQ-L9-wmg"/>
-                            <constraint firstItem="J0x-mX-NfB" firstAttribute="top" secondItem="iks-vI-mtT" secondAttribute="bottom" constant="37" id="ddu-QW-5M0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iks-vI-mtT" secondAttribute="trailing" constant="40" id="fLW-0G-whe"/>
-                            <constraint firstItem="UdL-1e-oo6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="128" id="gAh-ch-mUV"/>
-                            <constraint firstItem="Gbo-Kb-dPJ" firstAttribute="top" secondItem="J0x-mX-NfB" secondAttribute="bottom" constant="19" id="iEr-aY-t8H"/>
-                            <constraint firstItem="J0x-mX-NfB" firstAttribute="top" secondItem="UdL-1e-oo6" secondAttribute="bottom" constant="113" id="inm-IP-bHL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UdL-1e-oo6" secondAttribute="trailing" constant="93" id="oCx-sc-46x"/>
-                            <constraint firstItem="J0x-mX-NfB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="yzP-qC-xcx"/>
+                            <constraint firstItem="UdL-1e-oo6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1QN-BA-0Xy"/>
+                            <constraint firstItem="iks-vI-mtT" firstAttribute="top" secondItem="UdL-1e-oo6" secondAttribute="bottom" constant="35" id="2MO-ov-E8j"/>
+                            <constraint firstItem="iks-vI-mtT" firstAttribute="leading" secondItem="J0x-mX-NfB" secondAttribute="leading" id="DOO-kb-w5a"/>
+                            <constraint firstItem="Yuk-cj-Ti0" firstAttribute="top" secondItem="Gbo-Kb-dPJ" secondAttribute="bottom" constant="66.5" id="I97-5B-FVh"/>
+                            <constraint firstItem="UdL-1e-oo6" firstAttribute="centerX" secondItem="iks-vI-mtT" secondAttribute="centerX" id="IlW-33-G8H"/>
+                            <constraint firstItem="UdL-1e-oo6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="NOE-XO-lOU"/>
+                            <constraint firstItem="Yuk-cj-Ti0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="Rr5-1Q-Scx"/>
+                            <constraint firstItem="iks-vI-mtT" firstAttribute="trailing" secondItem="J0x-mX-NfB" secondAttribute="trailing" id="YFH-mM-rwb"/>
+                            <constraint firstItem="iks-vI-mtT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="eGA-Bo-s3d"/>
+                            <constraint firstItem="Gbo-Kb-dPJ" firstAttribute="top" secondItem="J0x-mX-NfB" secondAttribute="bottom" constant="43" id="erL-nY-6QA"/>
+                            <constraint firstItem="J0x-mX-NfB" firstAttribute="centerX" secondItem="Gbo-Kb-dPJ" secondAttribute="centerX" id="eyD-rl-qj9"/>
+                            <constraint firstItem="Gbo-Kb-dPJ" firstAttribute="centerX" secondItem="Yuk-cj-Ti0" secondAttribute="centerX" id="huz-K5-a1l"/>
+                            <constraint firstItem="Gbo-Kb-dPJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="hwa-ip-ofM"/>
+                            <constraint firstItem="UdL-1e-oo6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="o77-qV-Me9"/>
+                            <constraint firstItem="J0x-mX-NfB" firstAttribute="top" secondItem="iks-vI-mtT" secondAttribute="bottom" constant="59" id="uPK-Ty-bVe"/>
                         </constraints>
                     </view>
                     <connections>
